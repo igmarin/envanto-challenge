@@ -2,10 +2,11 @@ source 'https://rubygems.org'
 
 ruby '3.0.2'
 
+gem 'administrate', '~> 0.16.0'
+gem 'devise', '~> 4.8.0'
 gem 'faraday'
 gem 'jbuilder', '~> 2.7'
 gem 'pg', '~> 1.1'
-gem 'devise', '~> 4.8.0'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 gem 'sass-rails', '>= 6'
