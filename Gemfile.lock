@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/igmarin/sentim.git
-  revision: cb48e57245f501ee896abaf658fa38a633bf799a
+  revision: 3ad28a59fe1cd39fa9838ec67ee52404178d76fa
   specs:
     sentim (0.1.0)
       faraday (~> 1.8.0)
