@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 ruby '3.0.2'
 
 gem 'administrate', '~> 0.16.0'
+gem 'administrate-field-active_storage', '0.1.8'
 gem 'devise', '~> 4.8.0'
 gem 'faraday'
 gem 'jbuilder', '~> 2.7'

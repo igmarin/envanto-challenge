@@ -6,6 +6,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :comments
+
   validates :email, format: {
     with: VALID_REGEX_DOMAIN, message: 'invalid account email domain'
   }
