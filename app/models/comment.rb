@@ -5,7 +5,12 @@ class Comment < ApplicationRecord
   has_many_attached :files
 
   validates :files, attached: true,
-                    limit: { min: 1, max: 3 },
                     content_type: { in: 'text/plain',
                                     message: 'the file type needs to be text/plain' }
+
+  after_create :process_files
+
+  def process_files
+    UpdateCommentJob.set(wait: 1.seconds).perform_later(self)
+  end
 end
