@@ -47,6 +47,8 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_storage_validations (0.9.5)
+      rails (>= 5.2.0)
     activejob (6.1.4.1)
       activesupport (= 6.1.4.1)
       globalid (>= 0.3.6)
@@ -276,8 +278,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  active_storage_validations (~> 0.9.5)
   administrate (~> 0.16.0)
-  administrate-field-active_storage (= 0.1.8)
+  administrate-field-active_storage (~> 0.1.8)
   bootsnap (>= 1.4.4)
   devise (~> 4.8.0)
   faraday
